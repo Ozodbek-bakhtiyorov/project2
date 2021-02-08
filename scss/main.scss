@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+///////////////////components/////////////////////
+@mixin  d-flex ($fd, $jc, $ait){
+    display: flex;
+    flex-direction:$fd ;
+    align-items: $ait;
+    justify-content: $jc;
+}
+
+@mixin  txt ($fs, $fwe, $lh){
+    font-size: $fs;
+    font-weight: $fwe;;
+    line-height: $lh;
+}
+
+///////////////////components end/////////////////////
+
+.container{
+    width: 1000px;
+    margin: auto;
+
+}
+
+
+
+@import "header";
+@import "sectionbox1";
+@import "sectionbox2";
+@import "sectionbox3";
+@import "footer1";
+@import "footer2";
+
+

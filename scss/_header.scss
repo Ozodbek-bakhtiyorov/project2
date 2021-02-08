@@ -1,0 +1,86 @@
+
+
+.header{
+    width: 100%;
+    height:100vh;
+    background-image: url(./images/header_bg.jpg);
+    .navigation{
+        height: 100px;
+        @include d-flex(row,space-between,center );
+
+        .logo{
+            width: 200px;
+            height: 100px;
+            background-image: url(./images/logo.png);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .nav_list{
+            width: 600px;
+            height:100px;
+            @include d-flex(row,space-between ,center );
+
+            .nav_item{
+                list-style: none;
+                
+              
+                
+                .nav_link{
+                    @include txt(13pt, bold, 17px);
+                    color: white;
+                    opacity: 0.75;
+                     padding: 10px 15px;
+                     border-radius: 4px ;
+                     transition: all .3s ease;
+                     
+                }
+                .nav_link:hover{ background-color: rgba(9, 9, 37, 0.3);
+                    opacity: 1;
+                    box-shadow: 0 0 10px white;
+                
+                }
+            }
+        }
+    }
+}
+
+.header_body{
+    @include d-flex(column,auto ,center );
+    height: 100%;   
+ .line{
+        width: 100%;
+        margin-top: 60px;
+    }
+    .text1{
+        margin-top: 100px;  
+       @include txt(65px,bold ,60px );
+        text-align: center;
+        color: rgb(255, 255, 255, 0.9);
+    }
+    .text2{
+        text-align: center;
+        @include txt(22pt,normal , normal);
+        color:rgb(255, 255, 255, 0.9);    
+        margin-top: 64px;
+    }
+    .btn-primary{
+        margin-top: 64px;
+        width: 200px;
+        height: 45px;
+        outline: none;
+        background-color: transparent;
+        cursor: pointer;
+        border: 1px solid rgb(15, 223, 15);
+        @include txt(13pt,bold ,16px );
+        color: #33b319;
+        opacity: 0.8;
+        border-radius: 3px;transition: all 0.4s ease;
+    }
+    .btn-primary:hover{
+        background-color: rgb(19, 165, 19);
+        color: white;
+    }
+   
+}
+
