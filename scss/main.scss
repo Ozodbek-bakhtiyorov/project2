@@ -7,6 +7,7 @@
 }
 
 ///////////////////components/////////////////////
+$h:100vh;
 @mixin  d-flex ($fd, $jc, $ait){
     display: flex;
     flex-direction:$fd ;
@@ -18,6 +19,12 @@
     font-size: $fs;
     font-weight: $fwe;;
     line-height: $lh;
+}
+@mixin d-grid($x, $y, $jc, $ait){
+    display: grid;
+    grid-template-columns: repeat($x, $y);
+    justify-content:  $jc;
+    align-items: $ait;
 }
 
 ///////////////////components end/////////////////////

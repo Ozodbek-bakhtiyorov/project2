@@ -1,0 +1,57 @@
+.sectionbox3{
+    @include d-grid(4,1fr,center,center);
+    grid-gap: 30px;
+    margin-top: 100px;
+    .user_card{
+        width: 270px;
+        height: 585px;
+        .user_image{
+            width: 270px;
+            height: 270px;
+        }
+        .user_name{
+            margin-top: 30px;
+            @include txt(22pt, bold,normal);
+            color: #454749;
+        }
+        .job{
+            margin-top: 15px;
+            color: #e84545;
+            @include txt(13pt,bolder, normal);
+        }
+        .user_info{
+            @include txt(14pt, 300, normal);
+            margin-top: 30px;
+        }
+        .SM{@include d-flex(row,flex-start,center);
+
+            list-style:none;
+            width: 100%;
+            height: 40px;
+            margin-top: 15px;
+            .SM-item {
+                width: 40px;
+                height: 40px;
+                margin-right: 5px;
+
+                .SM-link{
+                    display: block;
+                    width: 40px;
+                    height: 40px;
+                    border: 1px solid gray;
+                }
+
+                  .SM-link:hover{
+                      color: rgb(7, 9, 39);
+                      border:1px solid rgba(9, 16, 58, 0.6);
+                  }
+        }
+        }
+        
+    }
+    .user_card:hover{
+         box-shadow: 0 0 10px rgb(12, 122, 12, 0.5);
+        background-image:linear-gradient(to right, rgba(32, 255, 2, 0.1) 10% , rgb(9, 82, 9, 0.1) 30%, rgb(36, 121, 109, 0.1) 100%) ;
+        transition: all .3s ease-in-out;
+    }
+}

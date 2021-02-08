@@ -2,8 +2,8 @@
 
 .header{
     width: 100%;
-    height:100vh;
-    background-image: url(./images/header_bg.jpg);
+    height:760px;
+    background-image: url(../images/header_bg.jpg);
     .navigation{
         height: 100px;
         @include d-flex(row,space-between,center );
@@ -11,7 +11,7 @@
         .logo{
             width: 200px;
             height: 100px;
-            background-image: url(./images/logo.png);
+            background-image: url(../images/logo.png);
             background-repeat: no-repeat;
             background-position: center;
         }
@@ -35,7 +35,7 @@
                      transition: all .3s ease;
                      
                 }
-                .nav_link:hover{ background-color: rgba(9, 9, 37, 0.3);
+                .nav_link:hover,.nav_link:focus{ background-color: rgba(9, 9, 37, 0.3);
                     opacity: 1;
                     box-shadow: 0 0 10px white;
                 
@@ -80,6 +80,7 @@
     .btn-primary:hover{
         background-color: rgb(19, 165, 19);
         color: white;
+        box-shadow:0 0 10px yellow;
     }
    
 }
