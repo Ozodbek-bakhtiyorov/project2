@@ -1,0 +1,54 @@
+.sectionbox4{
+    margin-top: 100px;
+    height: 500px;
+    @include d-flex(row,center,center);
+    .person_img{
+        width: 50%;
+        height: 100%;
+        .per_img{
+            width: 100%;
+            height: 500px;
+        }
+    }
+    .person_date{
+        padding-left: 100px;
+        background-color: #53354a;
+        width: 50%;
+        height: 100%; 
+        @include d-flex(column,center,flex-start);
+        .goal{
+            width: 520px;
+            @include txt(30px,bold,normal);
+            font-style: italic;
+            color: white;
+        }
+        .author{
+            margin-top: 25px;
+            @include txt(13pt,bold,normal);
+            color:white;
+        }
+        .radios{
+            margin-top: 30px;
+            @include d-flex(row,center,center);
+            width:90%;
+            height: 40px;
+            padding:10px;
+            background-color:transparent;
+            list-style: none;
+            .radio{
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                margin: 5px;
+                background-color: #755d6d;
+                cursor: pointer;
+                transition: all .4s ease;
+            }
+            .radio:hover{
+                background-color: white;
+                box-shadow: 0 0 4px white;
+
+            }     
+        }
+    }
+}

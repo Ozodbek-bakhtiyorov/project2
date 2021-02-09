@@ -3,7 +3,8 @@
     padding: 0;
     outline: none;
     text-decoration: none;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style: none;
 }
 
 ///////////////////components/////////////////////
@@ -30,7 +31,7 @@ $h:100vh;
 ///////////////////components end/////////////////////
 
 .container{
-    width: 1000px;
+    width: 1170px;
     margin: auto;
 
 }
@@ -41,6 +42,8 @@ $h:100vh;
 @import "sectionbox1";
 @import "sectionbox2";
 @import "sectionbox3";
+@import "sectionbox4";
+@import "sectionbox5";
 @import "footer1";
 @import "footer2";
 
