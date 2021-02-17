@@ -1,7 +1,7 @@
 {
   "name": "project2",
   "version": "1.0.0",
-  "description": "",
+  "description": "create new gulp-app",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,20 +10,20 @@
     "type": "git",
     "url": "git+https://github.com/Ozodbek-bakhtiyorov/project2.git"
   },
-  "keywords": [
-    "Ozodbek@2000"
-  ],
   "author": "Ozodbek Bakhtiyorov",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Ozodbek-bakhtiyorov/project2/issues"
   },
   "homepage": "https://github.com/Ozodbek-bakhtiyorov/project2#readme",
-  "dependencies": {
-    "my_app": "^2.0.0",
-    "react": "^17.0.1",
-    "react-app": "^1.1.2",
-    "react-component": "0.0.0",
-    "react-dom": "^17.0.1"
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.2"
   }
 }
